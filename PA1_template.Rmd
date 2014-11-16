@@ -8,7 +8,7 @@ output:
 data<-read.csv("/Users/wirelessdepot/Documents/Online courses/Data Science/reproducible /Assignment 1/activity.csv")
 data$date<-as.Date(data$date)
 ```
-#What is mean total number of steps taken per day?
+##What is mean total number of steps taken per day?
 ```{r}
 dailysteps<-aggregate(data$step,by=list(data$date), sum)
 
@@ -40,6 +40,7 @@ hist(dailysteps$Sum,col="green",main="average total number of steps taken/Day", 
             
 ##Imputing missing values 
 ###1Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
+
          ```{r}
 sum (is.na(data$steps))
 ```
