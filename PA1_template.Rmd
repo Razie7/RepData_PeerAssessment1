@@ -1,32 +1,8 @@
 ---
-<<<<<<< HEAD
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
-=======
 title: "Assignment1"
-output: html_document
+output:
+  html_document:
+    fig_caption: yes
 ---
 ```{r}
 data<-read.csv("/Users/wirelessdepot/Documents/Online courses/Data Science/reproducible /Assignment 1/activity.csv")
@@ -98,4 +74,3 @@ the mean of the 5 minute interval will replace the missing values.
 ```
 there is a considerable change in the result after replacing the missing values with averged values, and I assume it could have higher impact in some cases. so it is improtnat to keep eyes on the Missing Values in our analysisand and its impacts in the conclusion.
 
->>>>>>> assignment 1
